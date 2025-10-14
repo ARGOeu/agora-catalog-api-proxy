@@ -37,7 +37,7 @@ async def root():
         "status": "running",
         "available_endpoints": {
             "/health": "Health check",
-            "/service": "Get information on services",
+            "/services": "Get information on services",
             "/docs": "API documentation (Swagger UI)",
             "/redoc": "Alternative API documentation (ReDoc)",
         },
