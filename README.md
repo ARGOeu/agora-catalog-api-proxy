@@ -1,5 +1,5 @@
-# argo-een
-API proxy to translate catalog data to een schema
+# Agora Catalog Api Proxy
+API proxy to translate catalog data to different schema
 
 ## Prerequisites
 
@@ -12,23 +12,23 @@ API proxy to translate catalog data to een schema
 
 ```bash
 # Clone the repository
-git clone https://github.com/argoeu/argo-een
-cd argo-een
+git clone https://github.com/argoeu/agora-catalog-api-proxy
+cd agora-catalog-api-proxy
 
 # Install dependencies
 poetry install
 
 # Create .env file
 cp .env.example .env
-# Edit .env and set your ARGO_EEN_SOURCE_API
+# Edit .env and set your ARGO_CATALOG_API
 ```
 
 ### Option 2: Using pip
 
 ```bash
 # Clone the repository
-git clone https://github.com/argoeu/argo-een
-cd argo-een
+git clone https://github.com/argoeu/agora-catalog-api-proxy
+cd agora-catalog-api-proxy
 
 # Create virtual environment
 python -m venv venv
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 # Create .env file
 cp .env.example .env
-# Edit .env and set your  ARGO_EEN_SOURCE_API
+# Edit .env and set your  ARGO_CATALOG_API
 ```
 
 ## Configuration
@@ -47,14 +47,14 @@ cp .env.example .env
 Create a `.env` file in the project root:
 
 ```env
-ARGO_EEN_SOURCE_API=https://api.example.com
+AGORA_CATALOG_API=https://api.example.com
 ```
 
 ### Environment Variables
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `ARGO_EEN_SOURCE_API` | The external API endpoint to proxy results from | Yes |
+| `AGORA_CATALOG_API` | The external API endpoint to proxy results from | Yes |
 
 ## Running the Service
 
