@@ -94,7 +94,7 @@ async def services(
     data = resp["results"]
     count = resp["count"]
     start = offset
-    end = offset + (len(data) - 1)
+    end = offset + len(data)
 
     data_mod = [
         {
